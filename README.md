@@ -1,5 +1,5 @@
-"# VouchedFor" 
-this is my solution for your coding test. I have used PHP as programming languages and MYSQL as database to store and manage input data.
+# VouchedFor
+This is my solution for your coding test. I have used PHP as programming languages and MYSQL as database to store and manage input data.
 The first think that i’ve done was thinking about how to design the software in a way that could be easy to maintain and to upgrade. 
 The first thing that i have is the input but i don’t know how i’ve received it (i mean from a POST, GET, Rest API, SOAP, from Db, ecc. ) so i would like to have a software that can be adaptable to any type of input. So i have designed an interface , called InputInterface, and a gateway , called InputGateway, to manage this part of software and let developers to easly add new features. Developers have to implements the setInputAssocArray method and they will have added immediately a new inputType into my solution.
 The second thing that i’ve done was to design db schema , indexes, and keys constrain with cascade on edit and delete action. I have created 3 tables : users, reviews and logs to store user data, input and a helpfull logs table just to track the trend and have some report if needed. 
